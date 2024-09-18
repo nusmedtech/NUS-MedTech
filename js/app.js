@@ -37,21 +37,39 @@ const roles = [
     {
         type: 'EXCO',
         title: 'President',
-        description: 'The President leads the committee and oversees all activities.',
-        image: 'president.jpg'
+        description: 'The President leads NUS MedTech by setting its vision and strategic direction, guiding the Executive Committee, and fostering collaboration. They represent the organization to build partnerships with external stakeholders and drive key initiatives to promote innovation and sustainable growth.',
+        image: './src/roles/president.png'
     },
     {
         type: 'EXCO',
         title: 'Vice President',
-        description: 'The Vice President assists the President and manages internal affairs.',
-        image: 'vice_president.jpg'
+        description: 'The Vice President of NUS MedTech provides leadership and support to the Executive Committee, fostering collaboration and driving strategic initiatives. They represent the organization at internal and external events, communicating its vision and promoting a culture of innovation and excellence.',
+        image: './src/roles/vice-president.png'
     },
     {
         type: 'EXCO',
-        title: 'Treasurer',
-        description: 'The Treasurer manages the financial matters of the committee.',
-        image: 'treasurer.jpg'
-    }
+        title: 'Secretary Treasurer',
+        description: 'The Secretary-Treasurer manages administrative tasks, maintains records, and oversees financial planning, budgeting, and reporting to ensure smooth operations and fiscal responsibility for NUS MedTech.',
+        image: './src/roles/treasurer.png'
+    }, 
+    {
+        type: 'EXCO',
+        title: 'Directors',
+        description: 'Publicity Director: The Publicity Director develops and implements strategies to promote NUS MedTech events and initiatives, manages social media platforms, and creates engaging content to boost visibility and engagement. Project Directors: The Project Directors plan and execute projects related to medical technology, collaborating with industry professionals and academic experts to drive innovation and impact.',
+        image: './src/roles/directors.png'
+    },
+    {
+        type: 'Subcommittee',
+        title: 'Publicity Subcommittee',
+        description: 'Event Planning: Lead the organization and execution of NUS MedTech events, managing everything from planning to completion. Oversee budgets, coordinate with vendors and sponsors, and use strong communication skills to bring creative ideas to life. Web Designers: Design, build, and maintain user-friendly websites for NUS MedTech. Ensure websites are up-to-date, address technical issues, and collaborate with the team to turn design ideas into functional web pages. Video Producers: Create engaging video content to showcase NUS MedTech’s initiatives. Develop compelling stories, produce videos for social media, and manage editing to maintain professional quality and visual appeal.',
+        image: './src/roles/subcomm.png'
+    },
+    {
+        type: 'Subcommittee',
+        title: 'Project Members',
+        description: 'Collaborate with Project Directors to successfully complete projects in partnership with various companies.',
+        image: './src/roles/projmem.png'
+    },
 ];
 
 function changeRole() {
