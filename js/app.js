@@ -55,13 +55,13 @@ const roles = [
     {
         type: 'EXCO',
         title: 'Directors',
-        description: 'Publicity Director: The Publicity Director develops and implements strategies to promote NUS MedTech events and initiatives, manages social media platforms, and creates engaging content to boost visibility and engagement. Project Directors: The Project Directors plan and execute projects related to medical technology, collaborating with industry professionals and academic experts to drive innovation and impact.',
+        description: '<b>Publicity Director:</b> The Publicity Director develops and implements strategies to promote NUS MedTech events and initiatives, manages social media platforms, and creates engaging content to boost visibility and engagement.<br><br><b>Project Directors:</b> The Project Directors plan and execute projects related to medical technology, collaborating with industry professionals and academic experts to drive innovation and impact.',
         image: './src/roles/directors.png'
     },
     {
         type: 'Subcommittee',
         title: 'Publicity Subcommittee',
-        description: 'Event Planning: Lead the organization and execution of NUS MedTech events, managing everything from planning to completion. Oversee budgets, coordinate with vendors and sponsors, and use strong communication skills to bring creative ideas to life. Web Designers: Design, build, and maintain user-friendly websites for NUS MedTech. Ensure websites are up-to-date, address technical issues, and collaborate with the team to turn design ideas into functional web pages. Video Producers: Create engaging video content to showcase NUS MedTech’s initiatives. Develop compelling stories, produce videos for social media, and manage editing to maintain professional quality and visual appeal.',
+        description: '<b>Event Planning:</b> Lead the organization and execution of NUS MedTech events, managing everything from planning to completion. Oversee budgets, coordinate with vendors and sponsors, and use strong communication skills to bring creative ideas to life.<br><br><b>Web Designers:</b> Design, build, and maintain user-friendly websites for NUS MedTech. Ensure websites are up-to-date, address technical issues, and collaborate with the team to turn design ideas into functional web pages.<br><br><b>Video Producers:</b> Create engaging video content to showcase NUS MedTech’s initiatives. Develop compelling stories, produce videos for social media, and manage editing to maintain professional quality and visual appeal.',
         image: './src/roles/subcomm.png'
     },
     {
@@ -72,9 +72,10 @@ const roles = [
     },
 ];
 
+
 function changeRole() {
     currentRoleIndex = (currentRoleIndex + 1) % roles.length; // Loop back to the start
     document.querySelector('.role h3').innerHTML = `<span class="role-type">${roles[currentRoleIndex].type}</span><br>${roles[currentRoleIndex].title}`;
-    document.getElementById('role-description').textContent = roles[currentRoleIndex].description;
+    document.getElementById('role-description').innerHTML = roles[currentRoleIndex].description; // Use innerHTML instead of textContent
     document.getElementById('role-image').src = roles[currentRoleIndex].image; // Update the image source
 }

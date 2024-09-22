@@ -148,10 +148,15 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 40px 100px;
+    align-items: center;
+    background-image: url('../src/background1.png');
+}
+
+.comm {
+  background-image: url('../src/background2.png');
 }
 
 .section {
-    background-color: white;
     padding: 20px;
     border-radius: 8px;
     margin: 0;
@@ -160,6 +165,11 @@
 .purpose span, .connect span {
     font-weight: bold;
     color: #5e3fbc;
+}
+
+.purpose, .connect {
+  margin: 0 40px;
+  background-color: white;
 }
 
 .btn {
@@ -186,8 +196,8 @@
 }
 
 .slide img {
-    width: 500px;
-    height: 300px;
+    max-width: 500px;
+    max-height: 300px;
     border-radius: 8px;
 }
 
@@ -231,6 +241,9 @@
       width: 100%;
       text-align: center;
   }
+  .slide img {
+    max-width: 300px;
+  }
 }
 
 .committee-container {
@@ -256,6 +269,7 @@
   padding: 20px;
   border-radius: 8px;
   align-items: center;
+  height: 400px;
 }
 
 .role {
@@ -271,6 +285,7 @@
 
 .role-image {
   width: 250px;
+  min-height: 200px;
   margin-top: 10px;
 }
 
@@ -297,7 +312,12 @@
   .committee-panel {
       grid-template-columns: 1fr;
       padding: 10px;
+      height: 600px;
   }
+
+  .role {
+    height: 300px;
+  } 
 
   .arrow {
       justify-content: flex-end;
@@ -305,9 +325,18 @@
 
   .description, .role {
       padding-left: 10px;
+      height: 200px;
+      overflow: scroll;
   }
 
   .role-image {
-      width: 80px;
+      max-height: 200px;
+      width: 200px;
+      min-height: 0;
+  }
+
+  .committee-container h3 {
+    font-weight: bold;
+    font-size: 1rem;
   }
 }
