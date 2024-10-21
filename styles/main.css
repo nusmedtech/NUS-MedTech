@@ -1,7 +1,24 @@
 /* Main Content CSS */
 .main {
-    background-color: #141414;
-  }
+  background-color: #141414;
+  background-image: url(../src/committee/com2.jpeg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* Full height of the viewport */
+}
+
+.main::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Adjust the color and transparency */
+  z-index: 0; /* Make sure the overlay is on top of the background */
+}
+
   
   .main__container {
     display: grid;
@@ -10,8 +27,8 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #131313;
-    z-index: 1;
+    /* background-color: #131313; */
+    z-index: 2;
     width: 100%;
     max-width: 1300px;
     padding-right: 50px;
@@ -21,6 +38,7 @@
   .main__content {
     color: #fff;
     width: 100%;
+    z-index: 2;
   }
   
   .main__content h1 {
@@ -148,10 +166,15 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 40px 100px;
+    align-items: center;
+    /* background-image: url('../src/background1.png'); */
 }
 
+/* .comm {
+  background-image: url('../src/background2.png');
+} */
+
 .section {
-    background-color: white;
     padding: 20px;
     border-radius: 8px;
     margin: 0;
@@ -160,6 +183,11 @@
 .purpose span, .connect span {
     font-weight: bold;
     color: #5e3fbc;
+}
+
+.purpose, .connect {
+  margin: 0 40px;
+  background-color: white;
 }
 
 .btn {
@@ -186,8 +214,8 @@
 }
 
 .slide img {
-    width: 500px;
-    height: 300px;
+    max-width: 500px;
+    max-height: 300px;
     border-radius: 8px;
 }
 
@@ -231,6 +259,9 @@
       width: 100%;
       text-align: center;
   }
+  .slide img {
+    max-width: 300px;
+  }
 }
 
 .committee-container {
@@ -256,6 +287,7 @@
   padding: 20px;
   border-radius: 8px;
   align-items: center;
+  height: 400px;
 }
 
 .role {
@@ -271,6 +303,7 @@
 
 .role-image {
   width: 250px;
+  min-height: 200px;
   margin-top: 10px;
 }
 
@@ -297,7 +330,12 @@
   .committee-panel {
       grid-template-columns: 1fr;
       padding: 10px;
+      height: 600px;
   }
+
+  .role {
+    height: 300px;
+  } 
 
   .arrow {
       justify-content: flex-end;
@@ -305,9 +343,18 @@
 
   .description, .role {
       padding-left: 10px;
+      height: 200px;
+      overflow: scroll;
   }
 
   .role-image {
-      width: 80px;
+      max-height: 200px;
+      width: 200px;
+      min-height: 0;
+  }
+
+  .committee-container h3 {
+    font-weight: bold;
+    font-size: 1rem;
   }
 }
