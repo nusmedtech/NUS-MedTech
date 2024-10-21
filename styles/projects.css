@@ -1,0 +1,249 @@
+.main {
+    background-color: #141414;
+  }
+  
+  .main__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    justify-self: center;
+    margin: 0 auto;
+    height: 90vh;
+    background-color: #131313;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  
+  .main__content {
+    color: #fff;
+    width: 100%;
+  }
+  
+  .main__content h1 {
+    font-size: 4rem;
+    background-color: #ffde59;
+    background-image: linear-gradient(to top, #ffde59 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+    
+  .main__content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  
+  .main__btn {
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    outline: none;
+  }
+  
+  .main__btn a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .main__btn:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #4837ff;
+    transition: all 0.35s;
+    border-radius: 4px;
+  }
+  
+  .main__btn:hover {
+    color: #fff;
+  }
+  
+  .main__btn:hover:after {
+    width: 100%;
+  }
+  
+  .main__img--container {
+    text-align: center;
+  }
+  
+  #main__img {
+    height: 80%;
+    width: 80%;
+  }
+
+  /* Mobile Responsive */
+@media screen and (max-width: 768px) {
+  .main__container {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    margin: 0 auto;
+    height: 90vh;
+  }
+
+  .main__content {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .main__content h1 {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+  }
+
+  .main__content h2 {
+    font-size: 3rem;
+  }
+
+  .main__content p {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .main__content h1 {
+    font-size: 2rem;
+    margin-top: 3rem;
+  }
+
+  .main__content h2 {
+    font-size: 2rem;
+  }
+
+  .main__content p {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+  }
+
+  .main__btn {
+    padding: 12px 36px;
+    margin: 2.5rem 0;
+  }
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    padding: 40px 100px;
+}
+
+.section {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 0;
+}
+
+.project1 .project2 .project3 .project4 h2 {
+    font-weight: bold;
+    color: #5e3fbc;
+}
+
+.btn {
+    background-color: #212d63;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    max-width: 500px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    width: 100%;
+}
+
+.slide img {
+    width: 500px;
+    height: 300px;
+    border-radius: 8px;
+}
+
+@media (max-width: 820px) {
+  .container {
+      display: flex; /* Use flexbox for better control over order */
+      flex-direction: column; /* Stack elements vertically */
+      padding: 50px;
+      margin: 0 2rem; /* Apply margin of 0 top/bottom, 2rem sides */
+      text-align: center;
+  }
+
+  #project1-slideshow {
+      order: 1; 
+  }
+
+  .project1 {
+      order: 2; 
+  }
+
+  #project2-slideshow {
+      order: 3; 
+  }
+
+  .project2 {
+      order: 4;
+  }
+
+  #project3-slideshow {
+    order: 5; 
+}
+
+.project3 {
+    order: 6; 
+}
+
+#project4-slideshow {
+    order: 7; 
+}
+
+.project4 {
+    order: 8;
+}
+}
+
+@media (max-width: 480px) {
+  .container {
+      padding: 5px;
+  }
+
+  .section {
+      padding: 15px;
+      margin: 1rem 0.5rem 2rem; /* Top: 1rem, Sides: 0.5rem, Bottom: 2rem */
+  }
+
+  .btn {
+      width: 100%;
+      text-align: center;
+  }
+}
