@@ -147,13 +147,17 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 40px 100px;
+    max-width: 80%;
+    justify-self: center;
+
 }
 
 .section {
     background-color: white;
     padding: 20px;
     border-radius: 8px;
-    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 50px;
 }
 
 .project1 .project2 .project3 .project4 h2 {
@@ -171,43 +175,35 @@
     margin-top: 10px;
 }
 
-.slideshow-container {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    overflow: hidden;
+.project-image {
+  width: 100%;
+  z-index: 2;
+  align-self: center;
 }
 
-.slide {
-    display: none;
-    width: 100%;
-}
-
-.slide img {
-    width: 500px;
-    height: 300px;
-    border-radius: 8px;
+.project-image img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
 }
 
 @media (max-width: 820px) {
   .container {
-      display: flex; /* Use flexbox for better control over order */
-      flex-direction: column; /* Stack elements vertically */
+      display: grid; /* Use flexbox for better control over order */
       padding: 50px;
       margin: 0 2rem; /* Apply margin of 0 top/bottom, 2rem sides */
       text-align: center;
   }
 
-  #project1-slideshow {
-      order: 1; 
-  }
-
-  .project1 {
+  #daimsLogo {
       order: 2; 
   }
 
-  #project2-slideshow {
+  .project1 {
+      order: 1; 
+  }
+
+  #HormoniqueLogo {
       order: 3; 
   }
 
@@ -215,15 +211,15 @@
       order: 4;
   }
 
-  #project3-slideshow {
-    order: 5; 
-}
-
-.project3 {
+  #OneTouchLogo {
     order: 6; 
 }
 
-#project4-slideshow {
+.project3 {
+    order: 5; 
+}
+
+#HESYRALogo {
     order: 7; 
 }
 
@@ -246,4 +242,36 @@
       width: 100%;
       text-align: center;
   }
+
+  #daimsLogo {
+    order: 2; 
+}
+
+.project1 {
+    order: 1; 
+}
+
+#HormoniqueLogo {
+    order: 3; 
+}
+
+.project2 {
+    order: 4;
+}
+
+#OneTouchLogo {
+  order: 6; 
+}
+
+.project3 {
+  order: 5; 
+}
+
+#HESYRALogo {
+  order: 7; 
+}
+
+.project4 {
+  order: 8;
+}
 }
