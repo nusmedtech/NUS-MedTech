@@ -168,14 +168,13 @@ body {
   content: '';
   position: absolute;
   width: 4px;
-  background-color: #ccc;
+  background-color: #cccccc;
   top: 0;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
 }
-
 .timeline-event {
   position: relative;
   margin: 20px 0;
