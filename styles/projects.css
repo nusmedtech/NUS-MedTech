@@ -1,5 +1,5 @@
 .main {
-    background-color: #141414;
+    background-color: #000000;
   }
   
   .main__container {
@@ -9,7 +9,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #131313;
+    background-color: #000000;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -199,7 +199,6 @@
 
 @media (max-width: 820px) {
   .container {
-      display: grid; /* Use flexbox for better control over order */
       padding: 50px;
       margin: 0 2rem; /* Apply margin of 0 top/bottom, 2rem sides */
       text-align: center;
