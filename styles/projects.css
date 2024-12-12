@@ -1,5 +1,5 @@
 .main {
-    background-color: #141414;
+    background-color: #000000;
   }
   
   .main__container {
@@ -9,7 +9,7 @@
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #131313;
+    background-color: #000000;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -147,13 +147,20 @@
     grid-template-columns: 1fr 1fr;
     gap: 10px;
     padding: 40px 100px;
+    max-width: 80%;
+    justify-self: center;
+
 }
 
 .section {
-    background-color: white;
+    background-color: #f5f7ff;
     padding: 20px;
-    border-radius: 8px;
-    margin: 0;
+    box-shadow: 0 1px 8px 0 #494c57;
+    transition: 0.3s;
+}
+
+.section:hover {
+  box-shadow: 0 1px 15px 0 #494c57;
 }
 
 .project1 .project2 .project3 .project4 h2 {
@@ -168,46 +175,42 @@
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 20%;
+    text-decoration: none;
+    font-size: medium;
 }
 
-.slideshow-container {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    overflow: hidden;
+
+.project-image {
+  align-self: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
-.slide {
-    display: none;
-    width: 100%;
-}
-
-.slide img {
-    width: 500px;
-    height: 300px;
-    border-radius: 8px;
+.project-image img {
+  max-height: 150px;
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  align-content: center;
 }
 
 @media (max-width: 820px) {
   .container {
-      display: flex; /* Use flexbox for better control over order */
-      flex-direction: column; /* Stack elements vertically */
       padding: 50px;
       margin: 0 2rem; /* Apply margin of 0 top/bottom, 2rem sides */
       text-align: center;
   }
 
-  #project1-slideshow {
-      order: 1; 
-  }
-
-  .project1 {
+  #daimsLogo {
       order: 2; 
   }
 
-  #project2-slideshow {
+  .project1 {
+      order: 1; 
+  }
+
+  #HormoniqueLogo {
       order: 3; 
   }
 
@@ -215,15 +218,15 @@
       order: 4;
   }
 
-  #project3-slideshow {
-    order: 5; 
-}
-
-.project3 {
+  #OneTouchLogo {
     order: 6; 
 }
 
-#project4-slideshow {
+.project3 {
+    order: 5; 
+}
+
+#HESYRALogo {
     order: 7; 
 }
 
@@ -246,4 +249,36 @@
       width: 100%;
       text-align: center;
   }
+
+  #daimsLogo {
+    order: 2; 
+}
+
+.project1 {
+    order: 1; 
+}
+
+#HormoniqueLogo {
+    order: 3; 
+}
+
+.project2 {
+    order: 4;
+}
+
+#OneTouchLogo {
+  order: 6; 
+}
+
+.project3 {
+  order: 5; 
+}
+
+#HESYRALogo {
+  order: 7; 
+}
+
+.project4 {
+  order: 8;
+}
 }
