@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/nus-medtech/static/js/main.41f6943f.js",
-    "index.html": "/nus-medtech/index.html",
-    "main.41f6943f.js.map": "/nus-medtech/static/js/main.41f6943f.js.map"
+    "main.js": "/static/js/main.41f6943f.js",
+    "index.html": "/index.html",
+    "main.41f6943f.js.map": "/static/js/main.41f6943f.js.map"
   },
   "entrypoints": [
     "static/js/main.41f6943f.js"
