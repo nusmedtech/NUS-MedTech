@@ -153,15 +153,13 @@
 }
 
 .section {
-    background-color: #e0e6ff;
+    background-color: #f5f7ff;
     padding: 20px;
     box-shadow: 0 1px 8px 0 #494c57;
     transition: 0.3s;
 }
 
 .section:hover {
-  background-color: #e0e6ff;
-  padding: 20px;
   box-shadow: 0 1px 15px 0 #494c57;
 }
 
