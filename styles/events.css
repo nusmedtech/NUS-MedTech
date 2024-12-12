@@ -123,29 +123,42 @@
   .timeline-event {
     flex-direction: column; 
     align-items: center; 
-    margin-bottom: 20px; 
+    position: relative;
   }
 
-  .timeline-event .event-content,
-  .timeline-event .event-image {
+  .timeline-event.left, .timeline-event.right {
+    flex-direction: column;
+    margin-top: 80px; 
+  }
+
+  .timeline-event.left .event-content,
+  .timeline-event.right .event-content {
+    order: 2 !important;
     width: 90%;
-    text-align: center; 
+    text-align: center;
+    position: relative;
   }
 
-  .timeline-event .event-date,
+  .timeline-event.left .event-image,
+  .timeline-event.right .event-image {
+    order: 1 !important;
+    width: 90%;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .timeline-event .event-date {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
+  }
+
   .timeline-event .event-sem {
-    position: static;
-    margin: 10px 0; 
-    text-align: center;
-    display: inline-block;
-  }
-  
-  .timeline-event .event-content {
-    order: 1;
-  }
-  
-  .timeline-event .event-image {
-    order: 2;
+    top: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 100;
   }
 }
 
@@ -280,7 +293,7 @@ body {
 
 .event-sem {
   position: absolute;
-  top: 50%;
+  top: -50px;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: #5392f9;
