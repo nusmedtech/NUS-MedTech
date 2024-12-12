@@ -142,8 +142,8 @@
         margin: 0 2rem;
         text-align: center;
     }
-    .containter img {
-        width: 400px !important;
+    .container img {
+        width: 500px !important;
     }
     .container p {
         margin-top: 20px;
@@ -151,8 +151,8 @@
     }
 }
 
-@media screen and (max-width: 768px) {
-  .containter img {
-    width: 250px !important;
+@media screen and (max-width: 600px) {
+  .container img {
+    width: 350px !important;
 }
 }
