@@ -196,43 +196,42 @@
 }
 
 @media (max-width: 820px) {
+  /* #daimsLogo {
+    order: 1 !important; 
+}
+
+.section.project1 {
+    order: 2 !important; 
+}
+
+#HormoniqueLogo {
+    order: 3 !important; 
+}
+
+.section.project2 {
+    order: 4 !important;
+}
+
+#OneTouchLogo {
+  order: 5 !important; 
+}
+
+.section.project3 {
+  order: 6 !important; 
+}
+
+#HESYRALogo {
+  order: 7 !important; 
+}
+
+.section.project4 {
+  order: 8 !important;
+} */
   .container {
       padding: 50px;
       margin: 0 2rem; /* Apply margin of 0 top/bottom, 2rem sides */
       text-align: center;
   }
-
-  #daimsLogo {
-      order: 2; 
-  }
-
-  .project1 {
-      order: 1; 
-  }
-
-  #HormoniqueLogo {
-      order: 3; 
-  }
-
-  .project2 {
-      order: 4;
-  }
-
-  #OneTouchLogo {
-    order: 6; 
-}
-
-.project3 {
-    order: 5; 
-}
-
-#HESYRALogo {
-    order: 7; 
-}
-
-.project4 {
-    order: 8;
-}
 }
 
 @media (max-width: 480px) {
@@ -250,35 +249,4 @@
       text-align: center;
   }
 
-  #daimsLogo {
-    order: 2; 
-}
-
-.project1 {
-    order: 1; 
-}
-
-#HormoniqueLogo {
-    order: 3; 
-}
-
-.project2 {
-    order: 4;
-}
-
-#OneTouchLogo {
-  order: 6; 
-}
-
-.project3 {
-  order: 5; 
-}
-
-#HESYRALogo {
-  order: 7; 
-}
-
-.project4 {
-  order: 8;
-}
 }
